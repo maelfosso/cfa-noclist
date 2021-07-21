@@ -1,6 +1,6 @@
 import { users } from './src/api';
 
-const start = async () => {
+const start = async (): Promise<void> => {
   console.log(await users());
 }
 
