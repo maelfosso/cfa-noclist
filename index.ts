@@ -1,3 +1,7 @@
-import { auth } from './src/api';
+import { users } from './src/api';
 
-auth();
+const start = async () => {
+  console.log(await users());
+}
+
+start();
