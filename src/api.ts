@@ -5,8 +5,9 @@ const API_URL = 'http://localhost:8888';
 const HEADER_BADSEC_AUTHENTICATION_TOKEN = 'badsec-authentication-token';
 const MAX_RETRIES = 2;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const requestMayFailed = async (axiosRequest: Promise<AxiosResponse<any>>) : Promise<AxiosResponse<any>> => {
-  let attempt: number = 0;
+  let attempt = 0;
 
   while (attempt < MAX_RETRIES) {
     try {
@@ -29,7 +30,7 @@ export const auth = async (): Promise<string> => {
   }
 }
 
-export const users = async () => {
+export const users = async (): Promise<string> => {
   let token: string;
 
   try {
