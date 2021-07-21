@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "ts-node-dev --notify false --rs index.ts",
     "test": "jest"
@@ -18,6 +19,7 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.0",
     "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
     "ts-node": "^10.1.0",
     "ts-node-dev": "^1.1.8",
     "tslint": "^6.1.3",
